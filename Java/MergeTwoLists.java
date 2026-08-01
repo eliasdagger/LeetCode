@@ -33,7 +33,4 @@ public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         }
     }
     return res.next;
-
-
-
 }

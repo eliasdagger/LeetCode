@@ -26,7 +26,4 @@ def romanToInt(s):
             c += dct.get(s[l], 0)
             l += 1
     
-
     return c
-    
-print(romanToInt("LVIII"))

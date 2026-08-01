@@ -6,4 +6,3 @@ class Solution(object):
                 return s[::]
         # if no string exists return empty quotes
         return ""
-        
