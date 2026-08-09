@@ -16,7 +16,7 @@ class Solution {
 
         prev.next = list2;
         
-        for (int i = 0; i <= b-a; i++){
+        for (int i = 0; i < b-a+1; i++){
             curr = curr.next;
         }
 
