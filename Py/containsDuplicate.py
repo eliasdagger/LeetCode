@@ -10,3 +10,15 @@ class Solution(object):
     def containsDuplicate(self, nums):
         # utilise a set which contains only unique values, if the len of this set is different then the len of nums, nums had inunique values, thus false, else tr
         return len(set(nums)) != len(nums)
+
+# Second version, listed on NeetCode as "Duplicate Integer" - same problem.
+
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        lst = []
+        for i in nums:
+            if i in lst:
+                return True
+            lst.append(i)
+        return False
+            

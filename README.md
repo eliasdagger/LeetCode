@@ -4,11 +4,13 @@ I like solving problems, so I decided to devote myself to at least one LeetCode 
 
 🔗 [LeetCode Profile](https://leetcode.com/u/eliedagher/)
 
-**50 Problems Solved** 🚀
+**89 Problems Solved** 🚀
 
 ### 📊 Language Breakdown
-* **Python**: 45 Problems Solved
-* **Java**: 5 Problems Solved
+* **Python**: 66 Problems Solved
+* **Java**: 27 Problems Solved
+
+<sub>Problems solved in both languages are counted once in the total, and in each language below it — so the two language counts add up to more than the total.</sub>
 
 ---
 
@@ -45,7 +47,7 @@ I like solving problems, so I decided to devote myself to at least one LeetCode 
 
 ### ✅ Completed Problems
 
-80 problems solved across Python and Java. Every file has a written description of the problem in a comment at the top.
+84 finished here, plus 5 still open below — 89 problems in the repo. Every file carries a written description of the problem in a comment at the top.
 
 | # | Problem | Difficulty | Solution |
 |---|---|---|---|
@@ -71,6 +73,7 @@ I like solving problems, so I decided to devote myself to at least one LeetCode 
 | 100 | Same Tree | Easy | [Java](Java/sameTree.java) |
 | 104 | Maximum Depth of Binary Tree | Easy | [Java](Java/maxDepth.java) · [Py](Py/maxDepth.py) |
 | 112 | Path Sum | Easy | [Java](Java/hasPathSum.java) · [Py](Py/hasPathSum.py) |
+| 114 | Flatten Binary Tree to Linked List | Medium | [Java](Java/flatten.java) |
 | 121 | Best Time to Buy and Sell Stock | Easy | [Py](Py/bestTimeToBuyandSellStock.py) |
 | 125 | Valid Palindrome | Easy | [Py](Py/isPalidromeStr.py) |
 | 128 | Longest Consecutive Sequence | Medium | [Py](Py/longestConsecutive.py) |
@@ -83,11 +86,12 @@ I like solving problems, so I decided to devote myself to at least one LeetCode 
 | 167 | Two Sum II - Input Array Is Sorted | Medium | [Py](Py/twoSum%20II.py) |
 | 203 | Remove Linked List Elements | Easy | [Java](Java/removeElements.java) |
 | 206 | Reverse Linked List | Easy | [Java](Java/reverseList.java) |
-| 217 | Contains Duplicate | Easy | [Py](Py/containsDuplicate.py) · [Py](Py/hasDuplicate.py) |
+| 217 | Contains Duplicate | Easy | [Py](Py/containsDuplicate.py) |
 | 225 | Implement Stack using Queues | Easy | [Java](Java/myStack.java) |
 | 226 | Invert Binary Tree | Easy | [Java](Java/invertTree.java) · [Py](Py/invertTree.py) |
 | 232 | Implement Queue using Stacks | Easy | [Java](Java/myQueue.java) |
 | 234 | Palindrome Linked List | Easy | [Java](Java/isPalindromeLL.java) |
+| 237 | Delete Node in a Linked List | Medium | [Java](Java/deleteNode.java) |
 | 238 | Product of Array Except Self | Medium | [Py](Py/productExceptSelf.py) |
 | 242 | Valid Anagram | Easy | [Py](Py/isAnagram.py) |
 | 258 | Add Digits | Easy | [Py](Py/addDigits.py) |
@@ -107,7 +111,9 @@ I like solving problems, so I decided to devote myself to at least one LeetCode 
 | 977 | Squares of a Sorted Array | Easy | [Py](Py/sortedSquares.py) |
 | 1046 | Last Stone Weight | Easy | [Py](Py/lastStoneWeight.py) |
 | 1281 | Subtract the Product and Sum of Digits of an Integer | Easy | [Py](Py/subtractProductandSum.py) |
+| 1486 | XOR Operation in an Array | Easy | [Java](Java/xorOperation.java) |
 | 1550 | Three Consecutive Odds | Easy | [Py](Py/threeConsecutiveOdds.py) |
+| 1669 | Merge In Between Linked Lists | Medium | [Java](Java/mergeInBetween.java) |
 | 1672 | Richest Customer Wealth | Easy | [Py](Py/maximumWealth.py) |
 | 1700 | Number of Students Unable to Eat Lunch | Easy | [Py](Py/countStudents.py) |
 | 1822 | Sign of the Product of an Array | Easy | [Py](Py/arraySign.py) |
@@ -138,7 +144,6 @@ I like solving problems, so I decided to devote myself to at least one LeetCode 
 |---|---|---|---|
 | 19 | Remove Nth Node From End of List | [Py](Py/removeNthNodeFromEnd.py) | Unfinished attempt |
 | 21 | Merge Two Sorted Lists | [Java](Java/MergeTwoLists.java) | Logic written, missing semicolons |
-| 42 | Trapping Rain Water | [Py](Py/trappingRainWater.py) | Old attempt — solved in [trap.py](Py/trap.py) |
 | 739 | Daily Temperatures | [Py](Py/dailyTemperatures.py) | Unfinished attempt |
 | — | Contest — max subarray sum | [Py](Py/CONTEST%20-%20maxSubarraySum.py) | Did not complete |
 | — | Contest — max sum | [Py](Py/CONTEST%20-%20maxSum.py) | Contest scratch work |
