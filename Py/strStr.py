@@ -1,3 +1,11 @@
+# LeetCode 28 - Find the Index of the First Occurrence in a String (Easy)
+#
+# Given two strings haystack and needle, return the index of the first occurrence
+# of needle inside haystack, or -1 if needle is not part of haystack.
+#
+# Example: haystack = 'sadbutsad', needle = 'sad'    ->  0
+#          haystack = 'leetcode',  needle = 'leeto'  ->  -1
+
 class Solution(object):
     def strStr(self, haystack, needle):
         # starting pointer

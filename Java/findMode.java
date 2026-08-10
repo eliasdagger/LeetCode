@@ -1,3 +1,15 @@
+/*
+ * LeetCode 501 - Find Mode in Binary Search Tree (Easy)
+ *
+ * Given the root of a binary search tree that is allowed to contain duplicate
+ * values, return every value that appears the most often - the mode or modes.
+ *
+ * If several values tie for the highest frequency, return all of them, in any
+ * order. The tree is guaranteed to have at least one node.
+ *
+ * Example: a tree holding 1, 2, 2  ->  [2]
+ */
+
 class Solution {
     public int[] findMode(TreeNode root) {
         // create a int int key value pair hash map, for Map.entry denote entry we will access each entry of int int pairs of c, if it is == to max occuring number = Collections.max (returns max value in hashmap), add this to an int[] array to match return type

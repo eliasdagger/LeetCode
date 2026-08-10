@@ -1,3 +1,15 @@
+# LeetCode 15 - 3Sum (Medium)
+#
+# Given an integer array nums, return every unique triplet [nums[i], nums[j],
+# nums[k]] where i, j and k are three different indices and the three values add
+# up to 0.
+#
+# The answer must not contain duplicate triplets - [-1,0,1] and [0,1,-1] count as
+# the same triplet - though the triplets themselves may be returned in any order.
+# Handling those duplicates is the real difficulty of the problem.
+#
+# Example: nums = [-1,0,1,2,-1,-4]  ->  [[-1,-1,2],[-1,0,1]]
+
 from typing import List
 
 def threeSum(nums: List[int]) -> List[List[int]]:

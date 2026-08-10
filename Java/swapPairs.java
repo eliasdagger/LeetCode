@@ -1,3 +1,17 @@
+/*
+ * LeetCode 24 - Swap Nodes in Pairs (Medium)
+ *
+ * Given the head of a linked list, swap every two adjacent nodes and return the
+ * head of the new list. If the list has an odd length, the final leftover node
+ * stays where it is.
+ *
+ * The swap has to be done by relinking nodes - you may not simply swap the values
+ * stored inside them.
+ *
+ * Example: 1->2->3->4  ->  2->1->4->3
+ *          1->2->3     ->  2->1->3
+ */
+
 class Solution {
     public ListNode swapPairs(ListNode head) {
         // Dummy node to handle edge cases

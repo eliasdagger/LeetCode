@@ -1,3 +1,15 @@
+# LeetCode 125 - Valid Palindrome (Easy)
+#
+# A phrase counts as a palindrome if, after lowercasing every letter and throwing
+# away everything that is not a letter or a digit, it reads the same forwards and
+# backwards.
+#
+# Given a string s, return true if it is a palindrome and false otherwise. An
+# empty string counts as a palindrome.
+#
+# Example: 'A man, a plan, a canal: Panama'  ->  true
+#          'race a car'                      ->  false
+
 class Solution(object):
     def isPalindrome(self, s):
         # utilise a two pointer method which can check for symmetry by comparing either end

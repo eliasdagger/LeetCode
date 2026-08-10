@@ -1,3 +1,16 @@
+/*
+ * LeetCode 83 - Remove Duplicates from Sorted List (Easy)
+ *
+ * Given the head of a sorted singly linked list, delete every node whose value has
+ * already appeared so that each value shows up exactly once, then return the head.
+ *
+ * Because the list is sorted, duplicates are always adjacent - you only ever need
+ * to compare a node against the one directly in front of it. An empty list is
+ * returned as is.
+ *
+ * Example: 1->1->2->3->3  ->  1->2->3
+ */
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {

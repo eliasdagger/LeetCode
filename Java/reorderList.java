@@ -1,3 +1,18 @@
+/*
+ * LeetCode 143 - Reorder List (Medium)
+ *
+ * Given the head of a singly linked list L0 -> L1 -> ... -> Ln-1 -> Ln, reorder it
+ * into L0 -> Ln -> L1 -> Ln-1 -> L2 -> Ln-2 -> ...
+ *
+ * In other words, interleave the list with its own reverse: one node from the
+ * front, then one from the back, and so on until they meet.
+ *
+ * You may not change any node's value - the rearranging has to be done by
+ * relinking the nodes themselves, in place. The method returns nothing.
+ *
+ * Example: 1->2->3->4  ->  1->4->2->3
+ */
+
 class Solution {
     public void reorderList(ListNode head) {
         // if our head is null, we should return an empty list before assigning elements to avoid null pointer exceptions

@@ -1,3 +1,18 @@
+# LeetCode 238 - Product of Array Except Self (Medium)
+#
+# Given an integer array nums, return an array answer where answer[i] is the
+# product of every element of nums except nums[i].
+#
+# Every one of those products is guaranteed to fit in a 32-bit integer, and the
+# problem asks for an O(n) solution that does not use the division operator - the
+# intended answer builds prefix and suffix products instead.
+#
+# Zeros are the interesting case if you do divide: a single zero makes every other
+# entry 0 and only the zero's own slot gets the product of the rest, while two or
+# more zeros make the entire answer zeros.
+#
+# Example: [1,2,3,4]  ->  [24,12,8,6]
+
 # Initial Attempt which breached time limit
 class Solution(object):
     def productExceptSelf(self, nums):

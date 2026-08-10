@@ -1,3 +1,17 @@
+/*
+ * LeetCode 86 - Partition List (Medium)
+ *
+ * Given the head of a linked list and a value x, reorder the list so that every
+ * node with a value less than x comes before every node with a value greater than
+ * or equal to x.
+ *
+ * The relative order of the nodes inside each of the two groups has to be
+ * preserved - this is a stable partition, not a sort. Return the head of the
+ * reordered list.
+ *
+ * Example: 1->4->3->2->5->2 with x = 3  ->  1->2->2->4->3->5
+ */
+
 class Solution {
     public ListNode partition(ListNode head, int x) {
         

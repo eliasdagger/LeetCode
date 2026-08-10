@@ -1,3 +1,16 @@
+/*
+ * LeetCode 203 - Remove Linked List Elements (Easy)
+ *
+ * Given the head of a linked list and an integer val, remove every node whose
+ * value equals val and return the head of the new list.
+ *
+ * Matches can show up anywhere, including at the head itself or several in a row,
+ * so the head you return may not be the head you were given. A dummy node in front
+ * of the list makes every case look the same.
+ *
+ * Example: 1->2->6->3->4->5->6 with val = 6  ->  1->2->3->4->5
+ */
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {

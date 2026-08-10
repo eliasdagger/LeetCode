@@ -1,3 +1,16 @@
+# LeetCode 35 - Search Insert Position (Easy)
+#
+# Given a sorted array of distinct integers nums and a target value, return the
+# index of the target. If the target is not in the array, return the index where
+# it would need to be inserted to keep the array sorted.
+#
+# The solution has to run in O(log n) time, so this is binary search with a bit of
+# care about where the pointers end up when the target is missing.
+#
+# Example: nums = [1,3,5,6], target = 5  ->  2
+#          nums = [1,3,5,6], target = 2  ->  1
+#          nums = [1,3,5,6], target = 7  ->  4
+
 
 def searchInsert(nums, target):
     # Set up two pointers for the binary search

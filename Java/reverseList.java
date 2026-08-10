@@ -1,3 +1,15 @@
+/*
+ * LeetCode 206 - Reverse Linked List (Easy)
+ *
+ * Given the head of a singly linked list, reverse the direction of every link and
+ * return the head of the reversed list.
+ *
+ * The reversal is done by rewiring the existing nodes, not by copying values into
+ * a new list. An empty list or a single node comes back unchanged.
+ *
+ * Example: 1->2->3->4->5  ->  5->4->3->2->1
+ */
+
 class Solution {
     public ListNode reverseList(ListNode head) {
         ListNode succ, curr, n;

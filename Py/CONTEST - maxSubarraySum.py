@@ -1,3 +1,18 @@
+# Weekly contest problem - unfinished attempt
+#
+# The original statement was not saved in this file. Based on the signature
+# maxSubarraySum(nums, k) and the sample call, this looks like "Maximum Subarray
+# Sum With Length Divisible by K":
+#
+#   Given an integer array nums and an integer k, return the largest possible sum
+#   of a non-empty subarray (a contiguous block of nums) whose length is a
+#   multiple of k.
+#
+# Example: nums = [1,-2,3,4,-5], k = 2  ->  7, from the subarray [3,4]
+#
+# Worth double-checking against the contest page - the code below is an incomplete
+# sliding-window attempt and does not actually solve it.
+
 # Did not complete
 def maxSubarraySum(nums, k):
     total = 0

@@ -1,3 +1,20 @@
+/*
+ * LeetCode 225 - Implement Stack using Queues (Easy)
+ *
+ * Implement a last-in-first-out stack using only two queues. You may use nothing
+ * but standard queue operations - push to the back, peek or pop from the front,
+ * check the size, check whether it is empty.
+ *
+ * Implement the MyStack class:
+ *   MyStack()     initializes the stack
+ *   push(int x)   pushes x onto the top of the stack
+ *   pop()         removes and returns the element on top
+ *   top()         returns the element on top
+ *   empty()       returns whether the stack is empty
+ *
+ * pop and top are only ever called on a non-empty stack.
+ */
+
 class MyStack {
     private int top;
     Deque<Integer> q1, q2;

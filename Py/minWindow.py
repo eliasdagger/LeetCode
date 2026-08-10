@@ -1,3 +1,16 @@
+# LeetCode 76 - Minimum Window Substring (Hard)
+#
+# Given two strings s and t, return the shortest substring of s that contains
+# every character of t, counting duplicates - if t holds two 'a's, the window
+# needs at least two 'a's too.
+#
+# The characters may appear in any order inside the window, and the window may
+# contain extra characters that are not in t at all. If no such window exists,
+# return the empty string. The answer is guaranteed to be unique when it exists.
+#
+# Example: s = 'ADOBECODEBANC', t = 'ABC'  ->  'BANC'
+#          s = 'a', t = 'aa'               ->  '' (only one 'a' available)
+
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
         if t == "": return ""

@@ -1,3 +1,22 @@
+/*
+ * LeetCode 155 - Min Stack (Medium)
+ *
+ * Design a stack that supports the usual operations plus retrieving the smallest
+ * value currently in it, with every operation running in O(1) time.
+ *
+ * Implement the MinStack class:
+ *   MinStack()      initializes an empty stack
+ *   push(int val)   pushes val onto the stack
+ *   pop()           removes the element on top
+ *   top()           returns the element on top
+ *   getMin()        returns the minimum element currently in the stack
+ *
+ * pop, top and getMin are only ever called on a non-empty stack.
+ *
+ * getMin is the whole difficulty: scanning the stack for the minimum is O(n), so
+ * you need to carry the running minimum along with the values as you push.
+ */
+
 class MinStack {
 
     private int top;

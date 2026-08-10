@@ -1,3 +1,16 @@
+# LeetCode 128 - Longest Consecutive Sequence (Medium)
+#
+# Given an unsorted array of integers nums, return the length of the longest run
+# of consecutive integers that appear in it.
+#
+# The numbers do not need to sit next to each other in the array - only their
+# values matter. Duplicates do not extend a run.
+#
+# The real problem asks for an O(n) solution, so sorting the array first is a
+# fallback rather than the intended answer.
+#
+# Example: [100,4,200,1,3,2]  ->  4 (the sequence 1, 2, 3, 4)
+
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
         # count start at 0 for empty set case

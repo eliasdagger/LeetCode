@@ -1,3 +1,16 @@
+# LeetCode 36 - Valid Sudoku (Medium)
+#
+# Given a 9 x 9 Sudoku board where empty cells are marked '.', decide whether the
+# board as it has been filled in so far is valid. Only the cells that already
+# contain a digit need to be checked:
+#
+#   each row must contain the digits 1-9 without repeating
+#   each column must contain the digits 1-9 without repeating
+#   each of the nine 3 x 3 sub-boxes must contain the digits 1-9 without repeating
+#
+# A valid board does not have to be solvable, and it does not have to be full - it
+# just must not already break any of those three rules.
+
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
 

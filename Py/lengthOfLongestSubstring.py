@@ -1,3 +1,15 @@
+# LeetCode 3 - Longest Substring Without Repeating Characters (Medium)
+#
+# Given a string s, return the length of the longest substring that contains no
+# repeated characters.
+#
+# A substring has to be contiguous - 'pwke' is a subsequence of 'pwwkew' but not a
+# substring, so it does not count as an answer.
+#
+# Example: 'abcabcbb'  ->  3 ('abc')
+#          'bbbbb'     ->  1 ('b')
+#          'pwwkew'    ->  3 ('wke')
+
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
         l, r = 0,0
