@@ -15,6 +15,8 @@
  * pop and top are only ever called on a non-empty stack.
  */
 
+import java.util.*;
+
 class MyStack {
     private int top;
     Deque<Integer> q1, q2;

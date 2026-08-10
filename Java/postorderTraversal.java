@@ -11,6 +11,8 @@
  * Example: 1 with right child 2, whose left child is 3  ->  [3,2,1]
  */
 
+import java.util.*;
+
 // Create a dynamic list of ints, create a helper method which recursively traverses the tree post order (left, right, visit) and adds the values to the list, then return the list.
 
 class Solution {

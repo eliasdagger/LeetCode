@@ -1,13 +1,10 @@
-# Rearrange a string so all copies of one character come first
+# LeetCode 3992 - Rearrange a string so all copies of one character come first
 #
 # Given a string s and two characters x and y, return a rearrangement of s in
 # which every occurrence of y is moved to the front, ahead of any x, with all of
 # the other characters left in their original relative order.
 #
 # Example: s = 'axbyc' with y = 'b'  ->  'baxyc'
-#
-# The LeetCode number for this one was not recorded in the file, so the exact
-# original wording is worth double-checking.
 
 class Solution:
     def rearrangeString(self, s: str, x: str, y: str) -> str:

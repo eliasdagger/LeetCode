@@ -10,6 +10,8 @@
  * Example: a tree holding 1, 2, 2  ->  [2]
  */
 
+import java.util.*;
+
 class Solution {
     public int[] findMode(TreeNode root) {
         // create a int int key value pair hash map, for Map.entry denote entry we will access each entry of int int pairs of c, if it is == to max occuring number = Collections.max (returns max value in hashmap), add this to an int[] array to match return type

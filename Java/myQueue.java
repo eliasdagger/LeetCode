@@ -16,6 +16,8 @@
  * amortized O(1) per operation.
  */
 
+import java.util.*;
+
 class MyQueue {
     private int top;
     Deque<Integer> s1, s2;
