@@ -13,29 +13,24 @@
 #          '([)]'    ->  false (right types, wrong order)
 #          '{[]}'    ->  true
 
-class Solution(object):
-    def isValid(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
-        l = list(s)
-        i = 0
-        st = []
-        
-        while i < len(l):
-            if l[i] == "[" or l[i] == "(" or l[i] == "{":
-                st.append(l[i])
-                i += 1
+class Solution:
+    def isValid(self, s: str) -> bool:
+        # Any odd length is not closable since it wont have sufficient corresponding closing parenthesis for its opening parenthesis or vice versa. 
+        if len(s) % 2 != 0: return False
+
+        stack = []
+        dct = {
+            ")": "(",
+            "]": "[",
+            "}": "{" 
+        }
+        # if our char in a value in our dct, append as it is an opening bracket, else we will check if the left most bracket that hasnt been check is its correspondant.
+        for char in s:
+            if char in dct.values():
+                stack.append(char)
             else:
-                if not st:
+                if not stack or stack.pop() != dct[char]:
                     return False
-                peek = st[len(st) -1]
-                if (peek == "("  and l[i] == ")") or (peek == "[" and l[i] == "]") or (peek == "{" and l[i] == "}"):
-                    st.pop()
-                    i +=1
-                    continue
-                else: 
-                    return False
-        return len(st) == 0
+        # return if the stack is empty this covers cases like "][][]"
+        return not stack
         
