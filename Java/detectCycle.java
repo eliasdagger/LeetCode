@@ -29,7 +29,7 @@ so x = c - y
 
 */
 
-public class Solution {
+public class detectCycle {
     public ListNode detectCycle(ListNode head) {
         if (head == null) return null;
         ListNode slow, fast;
