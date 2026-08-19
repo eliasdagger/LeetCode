@@ -1,0 +1,19 @@
+# Works in all MySQL, PostgreSQl, DuckDB, Oracle etc
+
+# SELECT our desired cols to be included in output
+# FROM Person table and define it as P
+# LEFT JOIN ensures all FROM P is included
+# ON map A.personId to P.personId or vice versa, if no match is found include null (all cols which are not P since we left joined) 
+"""
+SELECT
+    P.firstName,
+    P.lastName,
+    A.city,
+    A.state
+FROM
+    Person P
+LEFT JOIN
+    Address A
+ON
+    A.personId = P.personId
+"""
