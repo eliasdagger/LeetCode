@@ -7,11 +7,8 @@
 # Example: 'thequickbrownfoxjumpsoverthelazydog'  ->  true
 #          'leetcode'                             ->  false
 
-class Solution(object):
-    def checkIfPangram(self, sentence):
-        return True if len(set(sentence)) == 26 else False
-        """
-        :type sentence: str
-        :rtype: bool
-        """
+class Solution:
+    # if the string is a pangram, then each letter of the alphabet must appear once, thus if the length of the set which removes duplicates == 26, then pangram
+    def checkIfPangram(self, sentence: str) -> bool:
+        return len(set(sentence)) == 26
         
