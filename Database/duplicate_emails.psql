@@ -1,0 +1,7 @@
+
+Since we want to return the emails that are duplicates, we will count the total occurances then return the ones greater than one
+
+SELECT Email
+FROM Person
+GROUP BY email
+HAVING COUNT(*) > 1
