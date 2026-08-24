@@ -13,6 +13,7 @@
 
 
 public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+    // Use a dummy node to build a list, if listval < other and vice versa we will add that to the next of our dummy list, if a part of one of the lists is remaining we can add the rest of the list to dummy since it is DESC 
     ListNode res = new ListNode(0);
     ListNode curr = res;
     while (list1 != null || list2 != null){
@@ -47,3 +48,25 @@ public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
     }
     return res.next;
 }
+
+// class Solution:
+//     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+//         dummy = ListNode()
+//         cur = dummy
+
+//         while list1 and list2:
+//             if list1.val > list2.val:
+//                 cur.next = list2
+//                 list2 = list2.next
+//             else:
+//                 cur.next = list1
+//                 list1 = list1.next
+            
+//             cur = cur.next
+        
+//         if list1:
+//             cur.next = list1
+//         else:
+//             cur.next = list2
+        
+//         return dummy.next
