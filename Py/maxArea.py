@@ -12,20 +12,22 @@
 #
 # Example: [1,8,6,2,5,4,8,3,7]  ->  49
 
-def maxArea(heights: List[int]) -> int:
-    area = 0
-    f = 0
-    r = len(heights) - 1
-    while f < r: 
-        temp = (r - f) * min(heights[f], heights[r])
-        print(f"Front: {heights[f]}cm @ {f} - Rear: {heights[r]}cm @ {r} - Area: {temp}")
-        if temp > area: 
-            area = temp
-        if heights[f] < heights[r]:
-            f += 1
-        else : 
-            r -= 1
-    return area
+class Solution:
+    def maxArea(self, height: List[int]) -> int:
+        # create a two pointer technique from either side, at each iteration check the volume, change the boundaries depending on which is the lower wall. this will ensure we look for the largest volume
+        l, r = 0, len(height) - 1
 
+        max_volume = 0
+        while l < r:
+            curr_volume = (r - l) * min(height[l], height[r])
+            max_volume = max(max_volume, curr_volume)
 
-print(maxArea([1,7,2,5,12,3,500,500,7,8,4,7,3,6]))
+            if height[l] < height[r]:
+                l += 1
+            elif height[l] > height[r]:
+                r -= 1
+            else:
+                l += 1
+        return max_volume 
+            
+        
