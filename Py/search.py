@@ -29,3 +29,32 @@ def search(nums: List[int], target: int) -> int:
     return -1
 
 print(search([-1,0,2,4,6,8], 3))
+
+
+"""
+RECURSIVE IMPLEMENTATION - Java
+
+create our helper method to create the bounds of our recursive search, this will act as our base case, then our recursive element
+is finding the mid value, checking if it matches target in, if not change the bounds/window depending on whether mid val is < or > to target. 
+
+class Solution {
+    public int search(int[] nums, int target) {
+        int l = 0;
+        int r = nums.length - 1;
+        return recursiveSearch(nums, target, l, r);
+    }
+
+    private int recursiveSearch(int[] L, int x, int l, int r){
+        if (l > r) return -1;
+        else{
+            int mid = (l + r) / 2;
+            if (L[mid] == x) return mid;
+            else {
+                if (L[mid] > x) return recursiveSearch(L, x, l, mid - 1);
+                else return recursiveSearch(L, x, mid + 1, r);
+            }
+        }
+    }
+}
+
+"""
