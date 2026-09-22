@@ -19,11 +19,12 @@ import heapq
 
 
 def lastStoneWeight(stones) -> int:
+    # negate all elements of stones so we can make a max heap using heapq module. 
+    # then we take the two largest stones, smash them, the difference is put back unless its 0 then we do nothing
+    # contunie until <=1 is left return that value
     stones = [-s for s in stones]
     heapq.heapify(stones)
-    # [2, 3, 3, 4, 4]
     while len(stones) > 1:
-        print(stones)
       
         x = heapq.heappop(stones)
         y = heapq.heappop(stones)
