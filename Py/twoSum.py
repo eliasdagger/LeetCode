@@ -23,3 +23,32 @@ class Solution(object):
                     return [j,i]
         # if loop breaks without appending values, there is no solution thus we will return empty res
         return []
+
+
+
+"""
+Two Sum - C Implementation
+
+int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
+    # when creating our result array, we need to store the memory in the heap opposed to the stack
+    # then edit returnSize to be the size of the array we are returning. Perform the same algorithm to find the 2sum
+    int* res = malloc(2 * sizeof(int));
+    *returnSize = 2;
+
+    for (int i = 0; i < numsSize; i++){
+        for (int j = i + 1; j < numsSize; j++){
+            if (nums[j] + nums[i] == target){
+                res[0] = j;
+                res[1] = i;
+                return res;
+            }
+        }
+    }
+
+    # 
+    *returnSize = 0;
+    return res;
+}
+
+
+"""
