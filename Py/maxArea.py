@@ -30,4 +30,26 @@ class Solution:
                 l += 1
         return max_volume 
             
-        
+"""
+maxArea - C implementation
+int maxArea(int* height, int heightSize) {
+    int res = 0;
+    int l = 0;
+    int r = heightSize - 1;
+
+    while (l < r){
+        int volume = (r - l) * (height[l] <= height[r] ? height[l] : height[r]);
+
+        res = (res >= volume ? res : volume);
+
+        if (height[l] >= height[r]){
+            r--;
+        } 
+        else{
+            l++;
+        }
+    }
+    return res;
+}
+
+"""
