@@ -26,3 +26,42 @@ class MyHashMap {
         dct[key] = -1;
     }
 }
+
+/**
+ * 
+ * 
+ * 
+ * MyHashMap - C Implementation
+
+First create the blueprint for MyHashMap, saying an array of 1000001 indeces is its characteristics
+Create the hashmap in memory by using malloc, which creates memory of sizeof HashMap, then returns its address, this reference is stored in obj*
+Use memset to fill sizeof(obj's array) -1's into obj's arr 
+free() releases the memory stored from malloc
+
+typedef struct {
+    int arr[1000001];
+} MyHashMap;
+
+
+MyHashMap* myHashMapCreate() {
+    MyHashMap* obj = malloc(sizeof(MyHashMap));
+    memset(obj->arr, -1, sizeof(obj->arr));
+    return obj;
+}
+
+void myHashMapPut(MyHashMap* obj, int key, int value) {
+    obj->arr[key] = value;
+}
+
+int myHashMapGet(MyHashMap* obj, int key) {
+    return obj->arr[key];
+}
+
+void myHashMapRemove(MyHashMap* obj, int key) {
+    obj->arr[key] = -1;
+}
+
+void myHashMapFree(MyHashMap* obj) {
+    free(obj);
+}
+ */
