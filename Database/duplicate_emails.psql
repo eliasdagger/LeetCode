@@ -1,3 +1,12 @@
+-- LeetCode 182 - Duplicate Emails (Easy)
+--
+-- Table Person(id, email), where every email is lowercase and not null. Report
+-- each email that appears in more than one row, listed once.
+--
+-- An email that appears three times still appears only once in the result.
+-- Rows can be returned in any order.
+--
+-- Example: a@b.com, c@d.com, a@b.com  ->  a@b.com
 
 Since we want to return the emails that are duplicates, we will count the total occurances then return the ones greater than one
 

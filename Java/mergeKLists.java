@@ -1,3 +1,19 @@
+/*
+ * LeetCode 23 - Merge k Sorted Lists (Hard)
+ *
+ * You are given an array of k linked lists, each already sorted in ascending
+ * order. Merge them all into one sorted linked list and return its head.
+ *
+ * k can be 0, and any of the individual lists can be empty. With up to 10^4
+ * lists and 10^4 total nodes, the problem is about picking the smallest
+ * current head out of k candidates efficiently, rather than repeatedly
+ * scanning or rebuilding.
+ *
+ * Example: [1->4->5, 1->3->4, 2->6]  ->  1->1->2->3->4->4->5->6
+ *          []                        ->  empty list
+ *          [empty list]              ->  empty list
+ */
+
 import java.util.Arrays;
 import java.util.PriorityQueue;
 

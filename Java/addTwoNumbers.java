@@ -1,3 +1,18 @@
+/*
+ * LeetCode 2 - Add Two Numbers (Medium)
+ *
+ * You are given two non-empty linked lists, each representing a non-negative
+ * integer with its digits stored in reverse order (the head is the ones digit).
+ * Add the two numbers and return the sum as a linked list in the same format.
+ *
+ * The lists can have different lengths, and a carry can run past the end of
+ * both lists, adding one extra node (99 + 1 = 100). Neither number has leading
+ * zeros except the number 0 itself.
+ *
+ * Example: 2->4->3 and 5->6->4  ->  7->0->8   (342 + 465 = 807)
+ *          9->9 and 1           ->  0->0->1   (99 + 1 = 100)
+ */
+
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         // Create a dummy and curr pointer, remainder int. 

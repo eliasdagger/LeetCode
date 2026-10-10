@@ -1,4 +1,22 @@
 /*
+ * LeetCode 142 - Linked List Cycle II (Medium)
+ *
+ * Given the head of a linked list, return the node where a cycle begins, or
+ * null if the list has no cycle. A cycle exists if following next pointers
+ * eventually revisits a node. You may not modify the list.
+ *
+ * Detecting that a cycle exists is the easy half (that is problem 141); the
+ * point here is locating its entry node. The list may be empty, a single node,
+ * or loop back to the head itself.
+ *
+ * The follow-up asks for O(1) extra memory, so no set of visited nodes.
+ *
+ * Example: 3->2->0->-4, tail links back to node 2  ->  node 2
+ *          1->2, tail links back to node 1          ->  node 1
+ *          1, no cycle                              ->  null
+ */
+
+/*
 I am using the Floyd cycle finding algorithm, which is used to find the start of a cycle in a list
 
 Here is how it is implemented: 

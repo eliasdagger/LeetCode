@@ -1,3 +1,20 @@
+/*
+ * LeetCode 706 - Design HashMap (Easy)
+ *
+ * Build a hash map from scratch, without any built-in hash table library. The
+ * class supports put(key, value), which inserts or overwrites a mapping;
+ * get(key), which returns the mapped value or -1 if the key is absent; and
+ * remove(key), which deletes the mapping if it exists.
+ *
+ * Keys and values are both in the range 0 <= key, value <= 10^6, and there are
+ * at most 10^4 calls in total. The small key range is what makes a plain
+ * direct-address array viable; the general version handles collisions with
+ * buckets instead.
+ *
+ * Example: put(1,1), put(2,2), get(1) -> 1, get(3) -> -1, put(2,1),
+ *          get(2) -> 1, remove(2), get(2) -> -1
+ */
+
 /* Allocate enough memory so we dont run into collisions (0 <= key, value <= 106).
    Fill with a default value of -1, this value wont be used by LeetCode (0 <= key, value <= 106) so return -1 if key:value doesnt exist requires trivial sol. 
  */

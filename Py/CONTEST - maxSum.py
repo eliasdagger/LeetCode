@@ -1,4 +1,4 @@
-# Weekly contest problem - problem statement not recorded
+# LeetCode 3974 - Maximum Total Sum of K Selected Elements (Medium)
 #
 # The original statement was not saved in this file. Reading the code, the task
 # appears to be: given an array nums, a count k, and a starting multiplier mul,

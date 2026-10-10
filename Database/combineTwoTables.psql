@@ -1,3 +1,15 @@
+-- LeetCode 175 - Combine Two Tables (Easy)
+--
+-- Two tables: Person(personId, lastName, firstName) and
+-- Address(addressId, personId, city, state). Report the first name, last name,
+-- city and state of every person in Person.
+--
+-- Every person must appear in the result even if they have no row in Address;
+-- in that case city and state are null. Rows can be returned in any order.
+--
+-- Example: Allen Wang has no address, Bob Alice lives in New York City, NY
+--          ->  (Allen, Wang, null, null), (Bob, Alice, New York City, New York)
+
 # Works in all MySQL, PostgreSQl, DuckDB, Oracle etc
 
 # SELECT our desired cols to be included in output

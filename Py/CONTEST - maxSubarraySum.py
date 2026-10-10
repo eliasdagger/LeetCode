@@ -1,17 +1,13 @@
-# Weekly contest problem - unfinished attempt
+# LeetCode 3976 - Maximum Subarray Sum After Multiplier (Medium)
 #
-# The original statement was not saved in this file. Based on the signature
-# maxSubarraySum(nums, k) and the sample call, this looks like "Maximum Subarray
-# Sum With Length Divisible by K":
+# The original statement was not saved in this file. From the title and the
+# signature maxSubarraySum(nums, k), the task is to find the largest subarray
+# sum in nums when a multiplier k can be applied as part of the choice - the
+# exact rule for how k is applied should be confirmed on the problem page.
 #
-#   Given an integer array nums and an integer k, return the largest possible sum
-#   of a non-empty subarray (a contiguous block of nums) whose length is a
-#   multiple of k.
+# Sample call in the file: maxSubarraySum([1,-2,3,4,-5], 2)
 #
-# Example: nums = [1,-2,3,4,-5], k = 2  ->  7, from the subarray [3,4]
-#
-# Worth double-checking against the contest page - the code below is an incomplete
-# sliding-window attempt and does not actually solve it.
+# The code below is an unfinished attempt (it got Wrong Answer).
 
 # Did not complete
 def maxSubarraySum(nums, k):
