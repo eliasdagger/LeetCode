@@ -1,6 +1,6 @@
 ## 🧩 Coding Profiles & Problem Solving
 
-I like solving problems, so I decided to devote myself to at least one LeetCode problem a day starting May 28th, 2026.
+I like solving problems, so I decided to devote myself to about one LeetCode problem a day starting May 28th, 2026.
 
 🔗 [LeetCode Profile](https://leetcode.com/u/eliedagher/)
 
@@ -17,8 +17,6 @@ I like solving problems, so I decided to devote myself to at least one LeetCode 
 * **Pandas**: 1 Problem Solved
 
 ### ✅ Completed Problems
-
-Every file carries a written description of the problem in a comment at the top.
 
 | # | Problem | Difficulty | Solution |
 |---|---|---|---|
